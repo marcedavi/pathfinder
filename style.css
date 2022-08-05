@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    @apply w-full h-full p-0 m-0 overflow-hidden;
+}
+
+body {
+    @apply flex flex-col text-xs;
+}
+
+select {
+    @apply text-gray-900 rounded-md px-2 border border-gray-900;
+}
+
+button {
+    @apply border border-gray-900 rounded-md px-2;
+}
+
+#ui-container {
+    @apply flex flex-row flex-wrap pt-4 pl-4 gap-x-2;
+}
+
+#ui-container > div {
+    @apply flex flex-col;
+}
+
+.controls {
+    @apply flex gap-x-1 pt-1;
+}
+
+#pixi-container {
+    @apply grow;
+}

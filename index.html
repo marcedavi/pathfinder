@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pathfinder</title>
+
+    <link rel="stylesheet" href="./dist/style.css" />
+    <script src="./assets/js/pixi.min.js"></script>
+</head>
+
+<body>
+    <div id="ui-container">
+        <div id="map-algorithm">
+            <label>Map Algorithm</label>
+            <div class="controls">
+                <select class="algorithm-select">
+                    <option selected>Choose algorithm</option>
+                    <option value="recursive-backtracker">Recursive Backtracker</option>
+                    <option value="kruskal">Kruskal's Algorithm</option>
+                    <option value="diamonds">Diamonds</option>
+                </select>
+        
+                <select class="speed-select">
+                    <option value="slow">Slow</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="fast">Fast</option>
+                </select>
+                
+                <button class="generate-button">Generate</button>
+            </div>
+        </div>
+        <div id="pathfinding-algorithm">
+            <label>Pathfinding Algorithm</label>
+            <div class="controls">
+                <select class="algorithm-select">
+                    <option selected>Choose algorithm</option>
+                    <option value="breadth-first">Breadth First</option>
+                    <option value="depth-first">Depth First</option>
+                </select>
+        
+                <select class="speed-select">
+                    <option value="slow">Slow</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="fast">Fast</option>
+                </select>
+                
+                <button class="play-button">Play</button>
+                <button class="stop-button">Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="pixi-container"></div>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
